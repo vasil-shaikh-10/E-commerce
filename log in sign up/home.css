@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+    background-color:#e3e6e6;
+}
+
+.container{
+	margin: 0 auto;
+	width: 1320px;
+}
+
+.nav_container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #131921;
+	color: #fff;
+}
+
+ul {
+	width: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	font-size: 20px;
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: #f3efef;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 15px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+ul li a:hover {
+	background: #0dbed5;
+	color: rgb(244, 241, 241);
+	padding: 5px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 15%;
+	height: 15%;
+}
+
+
+.content {
+	text-align: center;
+}
+
+button {
+	height: 55px;
+	width: 170px;
+	border-radius: 10px;
+	border: 2px solid rgb(23, 153, 208);
+	font-size: 20px;
+	font-weight: 500;
+	margin: 8px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+}
+button:hover{
+	color:rgb(17, 225, 236);
+	background-color: rgb(2, 2, 2);
+}
+h2 {
+	margin: 8px;
+}
+
+p {
+	color: #101010;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 100px;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+.grid-item{
+    box-shadow: rgba(9, 229, 244, 0.16) 0px 10px 36px 0px, rgba(247, 15, 220, 0.06) 0px 0px 0px 1px;
+    border-radius: 15px;
+}
+.grid-item .gird-text h4{
+    padding-bottom:10px;
+	padding-top: 10px;
+}
+.grid-item .gird-text p , span{
+    padding-bottom:10px;
+	padding-top: 10px;
+}
+.grid-item .grid-img img{
+    width: 250px;
+	height: 250px;
+}
+.gird-text{
+    text-align: center;
+}
+.padding-10{
+    padding:46px;
+}
+
+.slider{
+    width:100%;
+    height:500px;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.slide-ana{
+    height: 100%;
+}
+.slide-ana img{
+    position: absolute;
+    transition: all 1s;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.slide-ana{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+#slider-prev{
+    position:absolute;
+    top:300px;
+    left:0;
+    z-index:9;
+    border-radius: 0 10px 10px 0;
+}
+#slider-next{
+    position:absolute;
+    top:300px;
+    right:0;
+    z-index:9;
+    border-radius:10px 0 0 10px;
+}
+#slider-prev svg,#slider-next svg{
+    width:100%;
+    fill: #fff;
+}
+#slider-prev:hover,
+#slider-next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.vd{
+	justify-content: center;
+}
